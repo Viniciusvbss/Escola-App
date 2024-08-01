@@ -1,6 +1,6 @@
 // Conexão com Banco de Dados
 
-
+//banco funcionando legal
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('escoladb', 'Admin', 'Admin123', {
