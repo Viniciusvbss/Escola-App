@@ -20,9 +20,10 @@ app.use('/api/schools', schoolRoutes);
 app.use('/api/ratings', ratingRoutes);
 
 // Sincronizar modelos e iniciar servidor
-sequelize.sync({ force: true}).then(() => {
+//sequelize.sync({ force: true}).then(() => {
+// });
+
   app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
-    console.log('Banco de dados sicronizado');
+    // console.log('Banco de dados sicronizado');
   });
-});

@@ -3,10 +3,11 @@
 
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('escoladb', 'Admin', 'Admin123', {
+const sequelize = new Sequelize('Escoladb', 'Admin', 'Admin123', {
   host: 'localhost',
   dialect: 'postgres',
-  port: 5432
+  port: 5432,
+  logging: false
 });
 
 sequelize.authenticate()
