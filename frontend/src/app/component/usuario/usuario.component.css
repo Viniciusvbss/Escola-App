@@ -1,0 +1,10 @@
+.container-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1196px;
+  height: 588px;
+  margin: auto;
+  margin-top: 300px;
+  background-color: #eef2f6;
+}

@@ -1,0 +1,92 @@
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+.logo-container span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #3d3d3d;
+}
+.texto-maior {
+  margin-left: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  position: fixed;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+.nav-links {
+  display: none; /* Oculta a navegação por padrão */
+  flex-direction: column;
+  position: absolute;
+  top: 74px;
+  right: 11px;
+  background-color: #f6f0f033;
+  padding: 10px;
+  width: 250px; /* Aumenta a largura da navegação */
+}
+
+.nav-links.active {
+  display: flex; /* Mostra a navegação quando ativa */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  
+  list-style: none; /* tira o estilo da lista*/
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    justify-content: center;
+    position: relative;
+  }
+  .logo-container img {
+    margin: 0 auto;
+  }
+  .logo-container span {
+    display: none;
+  }
+  .nav-links {
+    display: none; /* Mantém a navegação oculta em telas maiores */
+  }
+
+  .menu-icon {
+    display: flex; /* Garante que o ícone de hambúrguer continue visível */
+    position: absolute;
+    right: 10px; /* Ajusta para a distância do canto direito */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
