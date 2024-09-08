@@ -1,10 +1,35 @@
-.container-usuario {
+.usuario-login-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 1196px;
   height: 588px;
   margin: auto;
   margin-top: 300px;
   background-color: #eef2f6;
+  padding: 100px;
+  gap: 10px;
+}
+.usuario-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.usuario-logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ img {
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.usuario-logo p {
+  text-align: center;
+  display: flex;
+  font-size: 35px;
 }
