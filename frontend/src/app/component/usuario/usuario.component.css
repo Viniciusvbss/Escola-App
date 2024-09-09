@@ -7,21 +7,70 @@
   margin: auto;
   margin-top: 300px;
   background-color: #eef2f6;
-  padding: 100px;
-  gap: 10px;
+  padding: 50px;
+  gap: 50px;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 .usuario-form-container {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: 414px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.email {
+  width: 316px;
+  height: 41px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: left;
+}
+.email::placeholder {
+  color: #c2c2c2;
+}
+.senha {
+  width: 316px;
+  height: 41px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: left;
+}
+.senha::placeholder {
+  color: #c2c2c2;
 }
 .usuario-logo {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 460px;
+  gap: 30px;
 }
- img {
+.usuario-logo p {
+  width: 589px;
+  height: 135px;
+  word-wrap: break-word; /* Quebra o texto quando necessário */
+  line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+}
+img {
   width: 350px;
   justify-content: center;
   align-items: center;
@@ -32,4 +81,75 @@
   text-align: center;
   display: flex;
   font-size: 35px;
+}
+.btn-submit {
+  width: 316px;
+  height: 41px;
+  background-color: #1621E7;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.btn-forgot-password {
+  font-size: 14px;
+  border: none;
+  color: #2B50E4;
+  background-color: #fff;
+}
+.custom-line {
+  border: none; /* Remove o estilo padrão */
+  border-top: 1px solid black; /* Define a cor e espessura da linha */
+  width: 80%; /* Largura da linha */
+  margin: 5px 0; /* Espaçamento acima e abaixo */
+}
+.btn-create-account {
+  width: 316px;
+  height: 41px;
+  background-color: #00FF62;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+span {
+  width: 340px;
+  height: 30px;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+    .usuario-login-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+    }
+    .usuario-login-container p {
+      display: none;
+    }
+
+    .usuario-logo img {
+        width: 80px;
+    }
+    .usuario-form-container {
+      width: 70%;
+    }
+
+    .usuario-form-container input, .usuario-form-container button {
+      width: 50%;
+    }
+
+    .btn-submit, .btn-create-account {
+        padding: 12px;
+    }
+
+    span {
+        font-size: 10px;
+    }
 }
