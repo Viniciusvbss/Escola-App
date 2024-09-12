@@ -123,33 +123,49 @@ span {
   margin-left: 30px;
 }
 
-@media (max-width: 600px) {
-    .usuario-login-container {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      width: 100%;
-    }
-    .usuario-login-container p {
-      display: none;
-    }
-
-    .usuario-logo img {
-        width: 80px;
-    }
-    .usuario-form-container {
-      width: 70%;
-    }
-
-    .usuario-form-container input, .usuario-form-container button {
-      width: 50%;
-    }
-
-    .btn-submit, .btn-create-account {
-        padding: 12px;
-    }
-
-    span {
-        font-size: 10px;
-    }
+@media screen and (max-width: 600px) {
+  .usuario-login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0px;
+    width: auto;
+  }
+  .usuario-logo p {
+    display: none;
+  }
+  .usuario-logo img {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .usuario-form-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .email {
+    width: 260px;
+  }
+  .senha {
+    width: 260px;
+  }
+  .btn-submit {
+    width: 260px;
+  }
+  .btn-create-account {
+    width: 260px;
+  }
+  span {
+    margin: 0px;
+    
+  }
 }
