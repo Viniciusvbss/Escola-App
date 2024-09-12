@@ -137,7 +137,7 @@ span {
   .usuario-logo img {
     display: block;
     max-width: 150px;
-    margin: 0 auto;
+    margin: auto;
   }
   .form-container {
     display: flex;

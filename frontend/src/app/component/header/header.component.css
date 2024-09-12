@@ -32,42 +32,7 @@
   gap: 5px;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: all 0.3s;
-}
-
-.nav-links {
-  display: none; /* Oculta a navegação por padrão */
-  flex-direction: column;
-  position: absolute;
-  top: 74px;
-  right: 11px;
-  background-color: #f6f0f033;
-  padding: 10px;
-  width: 250px; /* Aumenta a largura da navegação */
-}
-
-.nav-links.active {
-  display: flex; /* Mostra a navegação quando ativa */
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-links li {
-  margin: 10px 0;
-  
-  list-style: none; /* tira o estilo da lista*/
-}
-
-.nav-links a {
-  color: #333;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .logo-container {
     justify-content: center;
     position: relative;

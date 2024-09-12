@@ -1,0 +1,104 @@
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: -88px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 2px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.nav-links {
+  display: none; /* Oculta a navegação por padrão */
+  flex-direction: column;
+  position: absolute;
+  right: 11px;
+  background-color: #f6f0f033;
+  padding: 10px;
+  width: 20%; /* Aumenta a largura da navegação */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-20px); /* Suaviza a transição quando o menu aparece */
+}
+
+.nav-links.active {
+  display: flex; /* Mostra a navegação quando ativa */
+  opacity: 1;
+  transform: translateY(0);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  list-style: none; /* Tira o estilo da lista */
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  flex-direction: column;
+  background-color: #010D26;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu a {
+  color: #fff; /* Ajuste a cor para combinar com o fundo */
+  text-decoration: none;
+}
+
+/* Se você estiver usando o menu em dispositivos móveis, ajuste conforme necessário */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    right: -10px;
+  }
+  .navbar-container {
+    margin-left: -18px;
+  }
+}
