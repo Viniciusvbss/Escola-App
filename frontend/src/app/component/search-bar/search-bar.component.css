@@ -1,0 +1,76 @@
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f7; /* Cor de fundo semelhante à imagem */
+  
+  border-radius: 50px; /* Bordas arredondadas como na imagem */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background-color: white;
+
+  padding: 10px 20px;
+  border-radius: 50px;
+  
+  margin: o auto;
+  width: 500px;
+}
+
+.search-button {
+  background-color: #007bff; /* Cor azul do botão */
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.filter-button,
+.profile-button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button:hover,
+.profile-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ícones nos botões */
+.filter-button::before,
+.profile-button::before {
+  content: ""; /* Aqui você pode adicionar os ícones desejados */
+  display: inline-block;
+  margin-right: 8px;
+}
+@media screen and  (max-width: 760px) {
+ .header-container {
+    display: flex;
+  }
+
+  app-logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+}

@@ -1,12 +1,14 @@
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-usuario',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],//sempre lembrar que todo componente que recebe outro componente tem que importa o "RouterModule".
   templateUrl: './usuario.component.html',
-  styleUrl: './usuario.component.css'
+  styleUrl: './usuario.component.css',
+  
 })
 export class UsuarioComponent  {
 

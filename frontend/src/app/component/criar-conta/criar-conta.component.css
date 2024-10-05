@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-around;
   width: 1196px;
-  height: 588px;
+  height: 715px;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 141px;
   background-color: #eef2f6;
   padding: 50px;
   gap: 50px;
@@ -43,7 +43,7 @@
 .email::placeholder {
   color: #c2c2c2;
 }
-.senha {
+.Nome {
   width: 316px;
   height: 41px;
   background-color: #fbfbfb;
@@ -53,7 +53,46 @@
   padding-left: 20px;
   text-align: left;
 }
-.senha::placeholder {
+.Nome::placeholder {
+  color: #c2c2c2;
+}
+.CPF {
+  width: 316px;
+  height: 41px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: left;
+}
+.CPF::placeholder {
+  color: #c2c2c2;
+}
+.criar-senha {
+  width: 316px;
+  height: 41px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: left;
+}
+.criar-senha::placeholder {
+  color: #c2c2c2;
+}
+.confirma-senha {
+  width: 316px;
+  height: 41px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  text-align: left;
+}
+.confirma-senha::placeholder {
   color: #c2c2c2;
 }
 .usuario-logo {
@@ -115,6 +154,14 @@ img {
   color: #fff;
   cursor: pointer;
 }
+.usuario-form-container span {
+  text-align: start;
+  width: 340px;
+  height: 30px;
+  color: black;
+  font-size: 12px;
+  margin-left: 30px;
+}
 span {
   width: 340px;
   height: 30px;
@@ -136,7 +183,7 @@ span {
     display: none;
   }
   .usuario-logo img {
-    display: none;
+    display: block;
     max-width: 150px;
     margin: auto;
   }

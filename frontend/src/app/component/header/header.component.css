@@ -1,28 +1,50 @@
-.logo-container {
+.header-container {
+  background-color: #f0f4f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.custom-line {
+  border: none;
+  width: 80%;
+  border-top: 1px solid #000; /* Altere a cor conforme necessário */
+  margin: auto; /* Espaçamento superior e inferior */
+}
+app-logo {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 54px;
+  border-radius: 15%;
+  font-size: 16px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  cursor: pointer; /* Mudança do cursor ao passar sobre o botão */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras leves */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Animação de transição */
+  border: 2px solid #dfe1e5; /* Bordas com cor leve */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+}
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 20px;
-  max-width: 100%;
+  width: 70%;
 }
-
-.logo-container span {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.36px;
-  color: #3d3d3d;
-}
-.texto-maior {
-  margin-left: 30px;
-}
-
-.navbar {
+.filter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #fff;
-  position: fixed;
+  width: 30%;
+  flex-direction: row-reverse;
 }
 
 .menu-icon {
@@ -40,7 +62,7 @@
   .logo-container img {
     margin: 0 auto;
   }
-  .logo-container span {
+  .logo-container h1 {
     display: none;
   }
   .nav-links {

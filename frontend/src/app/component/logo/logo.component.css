@@ -1,0 +1,40 @@
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 100%;
+ 
+}
+
+.logo-container h1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #3d3d3d;
+}
+.texto-maior {
+  margin-left: 30px;
+}
+
+img {
+  width: 108px;
+  height: 97px;
+  margin: 0 127px 0 128px;
+  background-color: #e6eff7; /* Cor do fundo do cabeçalho */
+  mix-blend-mode: multiply; /* Altera a mesclagem da logo com o fundo. isso e muito bom  */
+}
+
+@media screen and (max-width: 760px) {
+  .logo-container {
+    display: flex;
+  }
+
+  img {
+    margin: 0 127px 0 111px;
+    align-items: flex-end;
+  }
+  h1 {
+    display: none;
+  }
+}
